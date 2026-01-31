@@ -17,6 +17,11 @@ models/*
 !data/processed/.gitkeep
 !models/.gitkeep
 
+# EXCEPCIONES: No ignorar los archivos de control de DVC
+!data/**/.gitignore
+!data/**/*.dvc
+!models/**/*.dvc
+
 # IDEs
 .vscode/
 .idea/
