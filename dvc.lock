@@ -1,0 +1,18 @@
+schema: '2.0'
+stages:
+  prepare:
+    cmd: python src/processing/processing.py
+    deps:
+    - path: data/raw/market_data.csv
+      hash: md5
+      md5: 807a76f897379bb4ecf75ff9bfc44ba4
+      size: 120312
+    - path: src/processing/processing.py
+      hash: md5
+      md5: 15e1ee593076086ba60ce57d917ac200
+      size: 1335
+    outs:
+    - path: data/processed/cleaned_data.csv
+      hash: md5
+      md5: b27456990ddcfdfe7f499d6dc2ef9845
+      size: 190605

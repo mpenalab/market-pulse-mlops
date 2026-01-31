@@ -1,0 +1,8 @@
+stages:
+  prepare:
+    cmd: python src/processing/processing.py
+    deps:
+    - data/raw/market_data.csv
+    - src/processing/processing.py
+    outs:
+    - data/processed/cleaned_data.csv
