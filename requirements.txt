@@ -6,3 +6,6 @@ dvc
 python-dotenv
 ipykernel
 yfinance
+fastapi
+uvicorn
+joblib

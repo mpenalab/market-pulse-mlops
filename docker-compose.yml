@@ -15,3 +15,10 @@ services:
       --backend-store-uri sqlite:///mlflow.db 
       --default-artifact-root /mlflow/artifacts 
       --host 0.0.0.0
+  market_pulse_api:
+      build: .
+      container_name: market_pulse_api
+      ports:
+        - "8000:8000"
+      depends_on:
+        - mlflow_server

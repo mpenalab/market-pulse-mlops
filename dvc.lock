@@ -16,3 +16,14 @@ stages:
       hash: md5
       md5: b27456990ddcfdfe7f499d6dc2ef9845
       size: 190605
+  train:
+    cmd: python src/training/train.py
+    deps:
+    - path: data/processed/cleaned_data.csv
+      hash: md5
+      md5: b27456990ddcfdfe7f499d6dc2ef9845
+      size: 190605
+    - path: src/training/train.py
+      hash: md5
+      md5: 21a5ca63942e727f1b164bcedc90a1f0
+      size: 1958

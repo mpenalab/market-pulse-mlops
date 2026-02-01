@@ -6,3 +6,8 @@ stages:
     - src/processing/processing.py
     outs:
     - data/processed/cleaned_data.csv
+  train:
+    cmd: python src/training/train.py
+    deps:
+    - data/processed/cleaned_data.csv
+    - src/training/train.py
